@@ -10,14 +10,221 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
-    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./scripts/darkmode.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+    <title>Frontend Mentor | Social Media Dashboard</title>
   </head>
-  <body>
-    Social Media Dashboard Total Followers: 23,004 Dark Mode @nathanf 1987
-    Followers 12 Today @nathanf 1044 Followers 99 Today @realnathanf 11k
-    Followers 1099 Today Nathan F. 8239 Subscribers 144 Today Overview - Today
-    Page Views 87 3% Likes 52 2% Likes 5462 2257% Profile Views 52k 1375%
-    Retweets 117 303% Likes 507 553% Likes 107 19% Total Views 1407 12%
+  <body class="colorContainer">
+    <div class="container">
+    <div class="follow_details">
+      <div class="follow_txt">
+        <h1>Social Media Dashboard</h1>
+        <p>Total Followers: 23,004</p>
+      </div>
+      <div class="follow_darkmode">
+        <p class="follow_darkmodeText">Dark mode</p>
+        <div class="follow_darkmodeSwitch">
+          <label class="followSwitch">
+            <input type="checkbox" onclick="dashboardTheme()" />
+            <span class="slider_test"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div
+     class="follow_container">
+      
+      <section class="social_section">
+        
+        <div class="social">
+        <article class="social_article info1">
+          <div class="social_article_follow">
+            <figure class="social_article_icon">
+              <img src="./images/icon-facebook.svg"/>
+            </figure>
+            <p>@nathanf</p>
+          </div>
+          <section class="general_article">
+            <h2>1987</h2>
+            <p>F O L L O W E R S</p>
+          </section>
+          <div class="general_article-container">
+            <figure class="general_article_icon">
+              <img src="./images/icon-up.svg"/>
+            </figure>
+            <p>12 Today</p>
+          </div>
+        </article>
+        </div>
+
+        <div class="social">
+        <article class="social_article info2">
+          <div class="social_article_follow">
+            <figure class="social_article_icon">
+              <img src="./images/icon-twitter.svg"/>
+            </figure>
+            <p>@nathanf</p>
+          </div>
+          <section class="general_article">
+            <h2>1044</h2>
+            <p>F O L L O W E R S</p>
+          </section>
+          <div class="general_article-container">
+            <figure class="general_article_icon">
+              <img src="./images/icon-up.svg"/>
+            </figure>
+            <p>99 Today</p>
+          </div>
+        </article>
+        </div>
+        
+        <div class="social">
+        <article class="social_article">
+          <div class="info3"></div>
+          <div class="social_article_follow">
+            <figure class="social_article_icon">
+              <img src="./images/icon-instagram.svg"/>
+            </figure>
+            <p>@realnathanf</p>
+          </div>
+          <section class="general_article">
+            <h2>11k</h2>
+            <p>F O L L O W E R S</p>
+          </section>
+          <footer class="general_article-container">
+            <figure class="general_article_icon">
+              <img src="./images/icon-up.svg"/>
+            </figure>
+            <p>1099 Today</p>
+          </footer>
+        </article>
+        </div>
+
+        <div class="social">
+        <article class="social_article info4">
+          <div class="social_article_follow">
+            <figure class="social_article_icon">
+              <img src="./images/icon-youtube.svg"/>
+            </figure>
+            <p>Nathan F.</p>
+          </div>
+          <section class="general_article">
+            <h2>8239</h2>
+            <p>S U B S C R I B E R S</p>
+          </section>
+          <div class="general_article-container">
+            <figure class="general_article_icon">
+              <img src="./images/icon-down.svg"/>
+            </figure>
+            <p>144 Today</p>
+          </div>
+        </article>
+        </div>
+      </section>
+
+      <h1 class="overview_title">Overview - Today</h1>
+
+      <section class="overview_section">
+       
+        <section class="overview_container">
+          <p class="overview_container_txt">Page Views</p>
+          <figure class="overview_icon">
+            <img src="./images/icon-facebook.svg"/>
+          </figure>
+          <h2 class="overview_container_number">87</h2>
+          <figure class="overview_container_difference">
+            <img src="./images/icon-up.svg"/>
+            <span> 3% </span>
+          </figure>
+        </section>
+
+        <section class="overview_container">
+          <p class="overview_container_txt">Likes</p>
+          <figure class="overview_icon">
+            <img src="./images/icon-facebook.svg"/>
+          </figure>
+          <h1 class="overview_container_number">52</h1>
+          <figure class="overview_container_difference">
+            <img src="./images/icon-down.svg"/>
+            <span> 2% </span>
+          </figure>
+        </section>
+       
+        <section class="overview_container">
+          <p class="overview_container_txt">Likes</p>
+          <figure class="overview_icon">
+            <img src="./images/icon-instagram.svg"/>
+          </figure>
+          <h1 class="overview_container_number">5462</h1>
+          <figure class="overview_container_difference">
+            <img src="./images/icon-up.svg"/>
+            <span> 2257% </span>
+          </figure>
+        </section>
+
+        <section class="overview_container">
+          <p class="overview_container_txt">Likes</p>
+          <figure class="overview_icon">
+            <img src="./images/icon-instagram.svg"/>
+          </figure>
+          <h1 class="overview_container_number">52k</h1>
+          <figure class="overview_container_difference">
+            <img src="./images/icon-up.svg"/>
+            <span> 1375% </span>
+          </figure>
+        </section>
+     
+        <section class="overview_container">
+          <p class="overview_container_txt">Retweets</p>
+          <figure class="overview_icon">
+            <img src="./images/icon-twitter.svg"/>
+          </figure>
+          <h1 class="overview_container_number">117</h1>
+          <figure class="overview_container_difference">
+            <img src="./images/icon-up.svg"/>
+            <span> 303% </span>
+          </figure>
+        </section>
+
+        <section class="overview_container">
+          <p class="overview_container_txt">Likes</p>
+          <figure class="overview_icon">
+            <img src="./images/icon-twitter.svg"/>
+          </figure>
+          <h1 class="overview_container_number">507</h1>
+          <figure class="overview_container_difference">
+            <img src="./images/icon-up.svg"/>
+            <span> 553% </span>
+          </figure>
+        </section>
+       
+        <section class="overview_container">
+          <p class="overview_container_txt">Likes</p>
+          <figure class="overview_icon">
+            <img src="./images/icon-youtube.svg"/>
+          </figure>
+          <h1 class="overview_container_number">107</h1>
+          <figure class="overview_container_difference">
+            <img src="./images/icon-down.svg"/>
+            <span> 19% </span>
+          </figure>
+        </section>
+
+        <section class="overview_container">
+          <p class="overview_container_txt">Total Views</p>
+          <figure class="overview_icon">
+            <img src="./images/icon-youtube.svg"/>
+          </figure>
+          <h1 class="overview_container_number">1407</h1>
+          <figure class="overview_container_difference">
+            <img src="./images/icon-down.svg"/>
+            <span> 12% </span>
+          </figure>
+        </section>
+      </section>
+    </div>
+  </div>
   </body>
 </html>
