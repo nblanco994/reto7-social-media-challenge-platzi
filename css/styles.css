@@ -10,6 +10,7 @@
   --DARKTEXT: hsl(230, 17%, 14%);
   --DARKTEXT_HOVER: hsl(227, 20%, 9%);
   --Light_Theme_SHADOW: 0 0 20px 3px rgb(88 79 79 / 75%);
+  --MODE_CHECK: hsl(230, 22%, 74%);
 }
 
 .darkTheme {
@@ -21,6 +22,7 @@
   --DARKTEXT_HOVER: hsl(0, 0%, 100%);
   --DARKTEXT: hsl(0, 0%, 100%);
   --background_LIGHT_DARK: hsl(231, 15%, 17%);
+  --MODE_CHECK: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
 
 body {
@@ -105,7 +107,7 @@ h1, h2 {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--Toggle);
+  background: var(--MODE_CHECK);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -140,23 +142,44 @@ input:checked+.slider_test:before {
 }
 
 .social_article {
-  margin-bottom: 10px;
+  margin-bottom: 14px;
+}
+
+.general_article-container {
+  margin-top: -15px;
+  margin-bottom: 15px;
 }
 
 .general_article-container, .social_article_follow {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
-.general_article_icon, .social_article_icon {
-  margin-inline-end: 0.4rem;
-  margin-inline-start: 1rem;
+.general_article_icon {
+  margin-inline-end: 0.2rem;
+  margin-inline-start: 0.9rem;
   font-weight: 400;
 }
 
-.general_article-container p, .social_article_follow p {
+.social_article_icon {
+  margin-inline-end: 0.35rem;
+  margin-inline-start: 2rem;
+  font-weight: 400;
+}
+
+.general_article-container p {
   margin-top: 2rem;
-  margin-left: .3rem;
+  margin-inline-end: 1rem;
+  margin-left: .2rem;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.social_article_follow p {
+  margin-top: 1.8rem;
+  margin-inline-end: 1rem;
+  margin-left: .2rem;
   font-size: 13px;
   font-weight: 700;
 }
@@ -166,7 +189,7 @@ input:checked+.slider_test:before {
 }
 
 .social_article_icon img {
-  margin-top: 15px;
+  margin-top: 20px;
   min-width: 1.6rem;
 }
 
@@ -325,6 +348,12 @@ input:checked+.slider_test:before {
   }
   .general_article-container p, .social_article_follow p {
     font-size: 11px;
+  }
+  .social_article_follow p {
+    margin-top: 28px;
+  }
+  .social_article_icon {
+    margin-inline-end: 0.25rem;
   }
   .overview_section, .social_section {
     grid-auto-flow: row;
