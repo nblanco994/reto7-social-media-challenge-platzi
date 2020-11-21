@@ -341,8 +341,8 @@ input:checked+.slider_test:before {
   .follow_darkmode p {
     position: relative;
     font-size: 13px;
-    margin-top: -50px;
-    margin-left: 60rem;
+    margin-top: -49px;
+    margin-left: 61rem;
   }
   .follow_txt p {
     font-size: .8rem;
