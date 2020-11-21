@@ -277,9 +277,11 @@ input:checked+.slider_test:before {
   margin-top: auto;
   margin-bottom: 1.5rem;
 }
-.overview_icon{
+
+.overview_icon {
   margin-top: 1.5rem;
 }
+
 .overview_icon, .overview_container_difference {
   margin-bottom: 2rem;
   justify-self: end;
